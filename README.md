@@ -1,2 +1,43 @@
-# image_classifier_project
-Image classification project using TensorFlow trained on the Oxford 102 Flower Dataset. It builds a neural network to recognize 102 flower species from images. The project includes data preprocessing, model training, and inference with top-k predictions, demonstrating a full deep learning pipeline for real-world computer vision applications.
+# Image Classifier Project
+
+This repository contains an image classification project developed as part of Udacity’s *Intro to Machine Learning with TensorFlow Nanodegree Program*. The project demonstrates how to build, train, and deploy a deep learning model for classifying images.
+
+## Overview
+
+The objective of this project is to develop a neural network capable of classifying images of flowers into one of 102 categories using the Oxford 102 Flower Dataset. The trained model is then integrated into a command-line application to perform predictions on new images.
+
+This project represents a complete machine learning workflow, from data preprocessing to model deployment.
+
+## Dataset
+
+The model is trained on the Oxford 102 Flower Dataset, which includes:
+- 102 distinct flower categories  
+- Approximately 20 images per category  
+- Training, validation, and testing splits  
+
+> Note: The dataset is not included in this repository due to its size and must be downloaded separately.
+
+## Methodology
+
+The project follows a structured pipeline:
+
+1. Data loading and preprocessing (resizing and normalization)  
+2. Model construction using TensorFlow/Keras  
+3. Training and validation of the model  
+4. Model evaluation and performance analysis  
+5. Saving the trained model  
+6. Deployment via a command-line interface  
+
+## Features
+
+- End-to-end image classification pipeline  
+- TensorFlow-based neural network implementation  
+- Top-K prediction support  
+- Model saving and loading  
+- Command-line interface for inference  
+
+## Usage
+
+### Train the Model
+```bash
+python train.py data_directory
