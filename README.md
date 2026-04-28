@@ -38,6 +38,4 @@ The project follows a structured pipeline:
 
 ## Usage
 
-### Train the Model
-```bash
-python train.py data_directory
+To use this project, first train the model using `python train.py data_directory`. After training, run predictions from the command line using `python predict.py image_path saved_model`. You can customize the output by adding options such as `--top_k` to return the top K predictions (default is 5) or `--category_names` to map class labels to readable names, for example: `python predict.py ./test_images/orchid.jpg my_model.h5 --top_k 3 --category_names label_map.json`.
