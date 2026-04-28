@@ -38,4 +38,4 @@ The project follows a structured pipeline:
 
 ## Usage
 
-Once the model has been trained and saved, predictions can be generated from the command line using the provided inference script. The script accepts an input image and a trained model file as arguments. Additional optional parameters include `--top_k`, which specifies the number of most likely predictions to return (default is 5), and `--category_names`, which maps class indices to human-readable labels. Example usage: `python predict.py ./test_images/orchid.jpg my_model.h5 --top_k 3 --category_names label_map.json`.
+Once the model has been trained and saved, predictions can be generated from the command line using the provided inference script. The script accepts an input image and a trained model file as arguments. Additional optional parameters include `--top_k`, which specifies the number of most likely predictions to return (default is 5), and `--category_names`, which maps class indices to human-readable labels. Example usage: `python predict.py ./test_images/hard-leaved_pocket_orchid.jpg my_model.h5 --top_k 3 --category_names label_map.json`.
