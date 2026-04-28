@@ -38,4 +38,4 @@ The project follows a structured pipeline:
 
 ## Usage
 
-To use this project, first train the model using `python train.py data_directory`. After training, run predictions from the command line using `python predict.py image_path saved_model`. You can customize the output by adding options such as `--top_k` to return the top K predictions (default is 5) or `--category_names` to map class labels to readable names, for example: `python predict.py ./test_images/orchid.jpg my_model.h5 --top_k 3 --category_names label_map.json`.
+Once the model has been trained and saved, predictions can be generated from the command line using the provided inference script. The script accepts an input image and a trained model file as arguments. Additional optional parameters include `--top_k`, which specifies the number of most likely predictions to return (default is 5), and `--category_names`, which maps class indices to human-readable labels. Example usage: `python predict.py ./test_images/orchid.jpg my_model.h5 --top_k 3 --category_names label_map.json`.
